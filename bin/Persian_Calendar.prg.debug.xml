@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="36" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="37" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="41" pc="268435479" symbol="onLayout"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="42" pc="268435483" symbol="onLayout"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="43" pc="268435523" symbol="onLayout"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="45" pc="268435536" symbol="onLayout"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="51" pc="268435574" symbol="onShow"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="55" pc="268435579" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="56" pc="268435583" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="58" pc="268435627" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="59" pc="268435663" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="60" pc="268435675" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="62" pc="268435711" symbol="onUpdate"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="70" pc="268435823" symbol="onHide"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="73" pc="268435828" symbol="div"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="74" pc="268435832" symbol="div"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="77" pc="268435839" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="78" pc="268435843" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="79" pc="268436086" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="79" pc="268436092" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="80" pc="268436095" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="80" pc="268436101" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="81" pc="268436104" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="81" pc="268436110" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="82" pc="268436113" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="82" pc="268436119" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="83" pc="268436122" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="83" pc="268436128" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="84" pc="268436131" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="84" pc="268436137" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="85" pc="268436140" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="85" pc="268436146" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="86" pc="268436149" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="86" pc="268436155" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="87" pc="268436158" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="87" pc="268436164" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="88" pc="268436167" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="88" pc="268436173" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="89" pc="268436176" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="89" pc="268436182" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="90" pc="268436185" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="90" pc="268436191" symbol="get_month_number"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="94" pc="268436195" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="97" pc="268436199" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="98" pc="268436199" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="99" pc="268436363" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="102" pc="268436527" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="103" pc="268436537" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="104" pc="268436547" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="106" pc="268436557" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="108" pc="268436642" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="109" pc="268436657" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="111" pc="268436680" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="113" pc="268436751" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="115" pc="268436764" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="117" pc="268436771" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="119" pc="268436781" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="120" pc="268436801" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="122" pc="268436811" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="124" pc="268436852" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="126" pc="268436862" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="127" pc="268436873" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="128" pc="268436902" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="131" pc="268436921" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="132" pc="268436953" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="134" pc="268436976" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="135" pc="268436986" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="137" pc="268436996" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="138" pc="268437001" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarView.mc" lineNum="140" pc="268437025" symbol="gregorian_to_jalali"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="5" pc="268437044" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="6" pc="268437048" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="10" pc="268437067" symbol="onStart"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="14" pc="268437072" symbol="onStop"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="18" pc="268437077" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\source\\Persian_CalendarApp.mc" lineNum="19" pc="268437081" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="19" pc="268437119" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="23" pc="268437131" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="24" pc="268437262" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="25" pc="268437314" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="28" pc="268437366" symbol="MainLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry field="true" id="11" symbol="lineSpacing"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="19" method="true" symbol="MainLayout"/>
+<entry field="true" id="8389761" symbol="centerY"/>
+<entry field="true" id="8389760" symbol="centerX"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry id="14" method="true" symbol="gregorian_to_jalali"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="20" symbol="AppName"/>
+<entry id="9" object="true" symbol="Persian_CalendarView"/>
+<entry field="true" id="18" symbol="LauncherIcon"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="12" method="true" symbol="div"/>
+<entry field="true" id="17" symbol="id_monkey"/>
+<entry id="13" method="true" symbol="get_month_number"/>
+<entry field="true" id="8389348" symbol="font"/>
+<entry id="16" module="true" symbol="Layouts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="15" module="true" symbol="Menus"/>
+<entry id="10" object="true" symbol="Persian_CalendarApp"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435574" name="dc" stackId="1" startPc="268435479"/>
+<entry endPc="268435822" name="today" stackId="2" startPc="268435583"/>
+<entry endPc="268435823" name="dc" stackId="1" startPc="268435579"/>
+<entry endPc="268435839" name="b" stackId="2" startPc="268435828"/>
+<entry endPc="268435839" name="a" stackId="1" startPc="268435828"/>
+<entry endPc="268436195" name="month" stackId="1" startPc="268435839"/>
+<entry endPc="268437043" name="g_day_no" stackId="11" startPc="268436199"/>
+<entry endPc="268437043" name="jm" stackId="15" startPc="268436199"/>
+<entry endPc="268437043" name="gm" stackId="9" startPc="268436199"/>
+<entry endPc="268437043" name="i" stackId="5" startPc="268436199"/>
+<entry endPc="268437043" name="g_days_in_month" stackId="6" startPc="268436199"/>
+<entry endPc="268437043" name="j_day_no" stackId="12" startPc="268436199"/>
+<entry endPc="268437043" name="j_days_in_month" stackId="7" startPc="268436199"/>
+<entry endPc="268437043" name="jd" stackId="16" startPc="268436199"/>
+<entry endPc="268437043" name="gd" stackId="10" startPc="268436199"/>
+<entry endPc="268437043" name="jy" stackId="14" startPc="268436199"/>
+<entry endPc="268437043" name="j_np" stackId="13" startPc="268436199"/>
+<entry endPc="268437043" name="gy" stackId="8" startPc="268436199"/>
+<entry endPc="268437044" name="g_d" stackId="3" startPc="268436195"/>
+<entry endPc="268437044" name="g_y" stackId="1" startPc="268436195"/>
+<entry endPc="268437044" name="str" stackId="4" startPc="268436195"/>
+<entry endPc="268437044" name="g_m" stackId="2" startPc="268436195"/>
+<entry endPc="268437072" name="state" stackId="1" startPc="268437067"/>
+<entry endPc="268437077" name="state" stackId="1" startPc="268437072"/>
+<entry endPc="268437383" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268437131"/>
+<entry endPc="268437384" name="dc" stackId="1" startPc="268437119"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="Persian_CalendarView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="Persian_CalendarView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="Persian_CalendarView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="Persian_CalendarView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="Persian_CalendarView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="div" parent="Persian_CalendarView">
+<param id="a"/>
+<param id="b"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="get_month_number" parent="Persian_CalendarView">
+<param id="month"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="gregorian_to_jalali" parent="Persian_CalendarView">
+<param id="g_y"/>
+<param id="g_m"/>
+<param id="g_d"/>
+<param id="str"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="Persian_CalendarApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="Persian_CalendarApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="Persian_CalendarApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="Persian_CalendarApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="MainLayout" parent="Layouts">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Draw the layout<br/> param The context<br/></div>]]></documentation>
+</functionEntry>
+</functions>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="166" parentId="globals" symbolId="Persian_CalendarView" type="class"/>
+<dataEntry offset="301" parentId="globals" symbolId="Persian_CalendarApp" type="class"/>
+<dataEntry offset="372" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="451" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="498" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="529" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="560" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="591" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="630" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+</debugInfo>
