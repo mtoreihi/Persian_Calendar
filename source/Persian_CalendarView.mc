@@ -8,6 +8,7 @@ using Toybox.Time.Gregorian;
 using Toybox.Time;
 using Toybox.Graphics as Gfx;
 using Toybox.System;
+using Toybox.Math;
 
 /*
 var dateString = Lang.format(
@@ -88,10 +89,13 @@ class Persian_CalendarView extends Ui.View {
     	my_x = centerX - 45;    	
     	var iterator = 1;
     	today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-    	var week_day = today.day_of_week - 1;
+    	var week_day = get_week_day();
+    	if (week_day == 7) { week_day = 0; } //set Saturday to 0   	
     	var month_days = get_month_days(result[1]);
-    	//System.println(month_days);
-    	//System.println(today.day_of_week);
+    	
+    	System.println(week_day);
+    	System.println(month_days);  	
+    	
     	while (iterator < month_days) {
     		for (i=0; i<7; i++) {
     			//System.println(iterator);
@@ -165,7 +169,24 @@ class Persian_CalendarView extends Ui.View {
 		}
 	}
 	
- 
+ 	function get_week_day() {
+    	//System.println(month_days);
+    	//System.println(today.day_of_week);
+    	var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+    	var result = gregorian_to_jalali(today.year,today.month,today.day,false);
+    	var res = jalali_to_gregorian(result[0],result[1],1); //get the week day for the first day of the month
+    	//System.println(res[0]+","+res[1]+","+res[2]);
+    	var options = {
+		    :year   => res[0],
+		    :month  => res[1],
+		    :day    => res[2]
+		};
+		var date = Gregorian.moment(options);
+		var first_day = Gregorian.info(date, Time.FORMAT_SHORT);
+		return first_day.day_of_week;
+		//System.println(first_day.day_of_week);
+	}
+	 	
 	function gregorian_to_jalali (g_y, g_m, g_d,str) 
 	{ 
 
@@ -215,5 +236,62 @@ class Persian_CalendarView extends Ui.View {
 	   var array = [jy,jm,jd];
 	   return array; 
 	} 
+	
+	function jalali_to_gregorian(j_y, j_m, j_d)
+    {
+    	var i = 0;
+	    var g_days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; 
+	    var j_days_in_month = [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29];
+        var jy = j_y-979;
+        var jm = j_m-1;
+        var jd = j_d-1;
+        var j_day_no = 365*jy + Math.floor(jy/33)*8 + Math.floor((jy%33+3)/4);
+        for (i=0; i < jm; ++i){
+            j_day_no += j_days_in_month[i];
+        }
+        j_day_no += jd;
+        var g_day_no = j_day_no+79;
+        var gy = 1600 + 400 * Math.floor(g_day_no/146097);
+        g_day_no = g_day_no % 146097;
+        var leap = true;
+        if (g_day_no >= 36525){
+            g_day_no--;
+            gy += 100 * Math.floor(g_day_no/36524);
+            g_day_no = g_day_no % 36524;
+            if (g_day_no >= 365){
+                g_day_no++;
+            }else{
+                leap = false;
+            }
+        }
+        gy += 4 * Math.floor(g_day_no/1461);
+        g_day_no %= 1461;
+        if (g_day_no >= 366){
+            leap = false;
+            g_day_no--;
+            gy += Math.floor(g_day_no/365);
+            g_day_no = g_day_no % 365;
+        }
+        var flag = 0;
+ 		if ((i == 1 && leap) == true) {
+ 			flag = 1;
+ 		} else {
+ 			flag = 0;
+ 		}
+        for (i = 0; g_day_no >= g_days_in_month[i] + (flag); i++){
+            g_day_no -= g_days_in_month[i] + (flag);
+            
+         	if ((i == 1 && leap) == true) {
+	 			flag = 1;
+	 		} else {
+	 			flag = 0;
+	 		}            
+        }
+        var gm = i+1;
+        var gd = g_day_no+1;
+        
+        var array = [gy, gm, gd];
+	    return array; 
+    }
 
 }
