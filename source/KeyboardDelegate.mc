@@ -56,7 +56,7 @@ class KeyboardListener extends Ui.BehaviorDelegate {
 			//System.println("Year : "+ current_year_view);
 	    }   
 	    else {
-	    	System.println("ELSE");
+	    	//System.println("ELSE");
 	    	updateTable(true);
 	    	return false;
 	    }
