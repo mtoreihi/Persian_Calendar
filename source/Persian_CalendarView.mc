@@ -25,17 +25,43 @@ var dateString = Lang.format(
 );
 System.println(dateString); // e.g. "16:28:32 Wed 1 Mar 2017"
 */
+var current_month_view = 1;
+var current_year_view = 1396;
+var show_today = true;
 
+function updateTable(reset) {
+	if (reset) {
+	    var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+		var result = gregorian_to_jalali(today.year,today.month,today.day,false);
+		current_month_view = result[1];
+		current_year_view = result[0];
+		show_today = true;	
+	}
+	else {
+		show_today = false;
+	}
+    Ui.requestUpdate();
+    return true;
+}
+
+    
 class Persian_CalendarView extends Ui.View {
 
-    var font = Gfx.FONT_TINY;
+    var font = Gfx.FONT_XTINY;
     var lineSpacing = Gfx.getFontHeight(font);
     
     var centerY = 60; // Default taken from previous hard coded values
     var centerX = 60;
 
+
     function initialize() {
         View.initialize();
+        
+        var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+    	var result = gregorian_to_jalali(today.year,today.month,today.day,false);
+    	current_month_view = result[1];
+    	current_year_view = result[0];
+        
     }
 
     // Load your resources here
@@ -51,26 +77,51 @@ class Persian_CalendarView extends Ui.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
+    	//drawMonthTable(dc, current_month_view, current_year_view);
     }
 
     // Update the view
     function onUpdate(dc) {
-    	var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+    	var current_view_text;
+    	if (show_today) {
+	    	var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+			font = Gfx.FONT_XTINY;
+	   	
+	    	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
+	        dc.clear();
+	        dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
+	        
+	        var result = [];
+	        result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
+	        //System.println(result[0]);
+	    	var jalali = result[0] + "/" + result[1] + "/" + result[2];
+	    	dc.drawText( centerX, centerY - (1 * lineSpacing), font, jalali, Gfx.TEXT_JUSTIFY_LEFT );
+    	}
+    	else {
+    		dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
+	        dc.clear();
+	        dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
+    		current_view_text = get_month_string(current_month_view) + "-" + current_year_view;
+    		dc.drawText( centerX + 10, centerY - (1 * lineSpacing), font, current_view_text, Gfx.TEXT_JUSTIFY_LEFT );
+    		dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
+    	}
+    	
+    	// Draw the Month Table
+    	drawMonthTable(dc, current_month_view, current_year_view);
+    	
+    	
+        // Call the parent onUpdate function to redraw the layout
+        //View.onUpdate(dc);
+    }
+
+
+
+	public function drawMonthTable(dc, month, year) {
+
     	var my_x = 45;
     	var my_y = 20;
-    	var i = 0;
-   	
-    	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
-        dc.clear();
-        dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
-        
-        var result = [];
-        result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
-        //System.println(result[0]);
-    	var jalali = result[0] + "/" + result[1] + "/" + result[2];
-    	dc.drawText( centerX, centerY - (1 * lineSpacing), font, jalali, Gfx.TEXT_JUSTIFY_LEFT );
-
-
+		var i = 0; 
+		
 		font = Gfx.FONT_XTINY;
     	var X_Spacing = 30;
     	var Y_Spacing = 20;
@@ -80,7 +131,11 @@ class Persian_CalendarView extends Ui.View {
     	my_y = my_y + Y_Spacing;
     	var week = ['S','S','M','T','W','T','F'];
     	for (i=0; i<7; i++) {
+    		if (i == 6) {
+    			dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
+    		}
     		dc.drawText(my_x , centerY - (1 * lineSpacing) + my_y, font, week[i], Gfx.TEXT_JUSTIFY_LEFT );
+    		dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
     		my_x += X_Spacing;
     	}
     	
@@ -88,17 +143,19 @@ class Persian_CalendarView extends Ui.View {
     	my_y = my_y + Y_Spacing;
     	my_x = centerX - 45;    	
     	var iterator = 1;
-    	today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-    	var week_day = get_week_day();
+    	//today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+    	var week_day = get_week_day(month, year);
     	if (week_day == 7) { week_day = 0; } //set Saturday to 0   	
-    	var month_days = get_month_days(result[1]);
+    	var month_days = get_month_days(month);
     	
-    	System.println(week_day);
-    	System.println(month_days);  	
+    	//System.println("week day:" + week_day);
+    	//System.println(month_days);  	
     	
-    	while (iterator < month_days) {
+    	while (iterator <= month_days) {
     		for (i=0; i<7; i++) {
-    			//System.println(iterator);
+    			if (i == 6) {
+    				dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
+    			}
     			if (iterator == 1) {
     				if (week_day == i) {
     					dc.drawText(my_x , centerY - (1 * lineSpacing) + my_y, font, iterator, Gfx.TEXT_JUSTIFY_LEFT );
@@ -116,21 +173,22 @@ class Persian_CalendarView extends Ui.View {
     				iterator += 1;
     				if (iterator > month_days) { break; }
     			}
+    			dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
+    			//System.println(iterator);
     		}
     		my_y = my_y + Y_Spacing;
     		my_x = centerX - 45;	
-    	}
-    	
-        // Call the parent onUpdate function to redraw the layout
-        //View.onUpdate(dc);
-    }
-
+    	}	
+	}
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
     }
     
+}
+
+//public functions 
     function div(a,b) { 
     	return (a / b); 
 	} 
@@ -169,12 +227,28 @@ class Persian_CalendarView extends Ui.View {
 		}
 	}
 	
- 	function get_week_day() {
+	function get_month_string(month) {
+		switch (month) {
+			case 1: return "Farv"; break;
+			case 2: return "Ordi"; break;
+			case 3: return "Khor"; break;
+			case 4: return "Tir "; break;
+			case 5: return "Mor "; break;
+			case 6: return "Shah"; break;
+			case 7: return "Mehr"; break;
+			case 8: return "Aban"; break;
+			case 9: return "Azar"; break;
+			case 10: return "Dei "; break;
+			case 11: return "Bahm"; break;
+			case 12: return "Esfa"; break;
+		}	
+	}
+	
+ 	function get_week_day(month, year) {
     	//System.println(month_days);
     	//System.println(today.day_of_week);
-    	var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-    	var result = gregorian_to_jalali(today.year,today.month,today.day,false);
-    	var res = jalali_to_gregorian(result[0],result[1],1); //get the week day for the first day of the month
+
+    	var res = jalali_to_gregorian(year, month, 1); //get the week day for the first day of the month
     	//System.println(res[0]+","+res[1]+","+res[2]);
     	var options = {
 		    :year   => res[0],
@@ -293,5 +367,3 @@ class Persian_CalendarView extends Ui.View {
         var array = [gy, gm, gd];
 	    return array; 
     }
-
-}
