@@ -28,6 +28,7 @@ System.println(dateString); // e.g. "16:28:32 Wed 1 Mar 2017"
 var current_month_view = 1;
 var current_year_view = 1396;
 var show_today = true;
+var device = "";
 
 function updateTable(reset) {
 	if (reset) {
@@ -52,9 +53,14 @@ class Persian_CalendarView extends Ui.View {
     
     var centerY = 60; // Default taken from previous hard coded values
     var centerX = 60;
+    
+    
+    var X_Spacing = 30;
 
 
     function initialize() {
+    	device = Ui.loadResource(Rez.Strings.DeviceModel);	// get the device model from resource file
+    	
         View.initialize();
         
         var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
@@ -117,17 +123,33 @@ class Persian_CalendarView extends Ui.View {
 
 
 	public function drawMonthTable(dc, month, year) {
-
-    	var my_x = 45;
+		
+		
+    	var my_x = 45;	
     	var my_y = 20;
 		var i = 0; 
 		
 		font = Gfx.FONT_XTINY;
-    	var X_Spacing = 30;
+		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
+    		X_Spacing = 20; //fenix 3
+    	}	   
+    	else {
+    		X_Spacing = 30;  //others
+    	}
+    	//System.println(device);
+    	//System.println(X_Spacing);
+    	
+
+    	//System.println(Rez.Strings.x_spacing)
     	var Y_Spacing = 20;
     	
     	// Draw the calendar header table 
-    	my_x = centerX - 45;
+		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
+    		my_x = 45; //fenix 3
+    	}	   
+    	else {
+    		my_x = centerX - 45;  //others
+    	}    	
     	my_y = my_y + Y_Spacing;
     	var week = ['S','S','M','T','W','T','F'];
     	for (i=0; i<7; i++) {
@@ -141,7 +163,12 @@ class Persian_CalendarView extends Ui.View {
     	
     	// Draw the calendar month table
     	my_y = my_y + Y_Spacing;
-    	my_x = centerX - 45;    	
+		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
+    		my_x = 45; //fenix 3
+    	}	   
+    	else {
+    		my_x = centerX - 45;  //others
+    	}    	
     	var iterator = 1;
     	//today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     	var week_day = get_week_day(month, year);
@@ -177,7 +204,12 @@ class Persian_CalendarView extends Ui.View {
     			//System.println(iterator);
     		}
     		my_y = my_y + Y_Spacing;
-    		my_x = centerX - 45;	
+			if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
+	    		my_x = 45; //fenix 3
+	    	}	   
+	    	else {
+	    		my_x = centerX - 45;  //others
+	    	} 	
     	}	
 	}
     // Called when this View is removed from the screen. Save the

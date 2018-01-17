@@ -2,6 +2,8 @@
     <iq:application entry="Persian_CalendarApp" id="483e03b33225405a839536e49ee806d7" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="1.2.0" name="@Strings.AppName" type="widget">
         <iq:products>
             <iq:product id="d2charlie"/>
+            <iq:product id="fenix3"/>
+            <iq:product id="fenix3_hr"/>
             <iq:product id="fenix5"/>
             <iq:product id="fenix5x"/>
             <iq:product id="fr935"/>
