@@ -252,41 +252,40 @@
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarView.mc" lineNum="397" pc="268440682" symbol="jalali_to_gregorian"/>
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarView.mc" lineNum="399" pc="268440692" symbol="jalali_to_gregorian"/>
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarView.mc" lineNum="400" pc="268440730" symbol="jalali_to_gregorian"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="13" pc="268440734" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="14" pc="268440738" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="19" pc="268440761" symbol="onKey"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="12" pc="268440734" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="13" pc="268440738" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="18" pc="268440761" symbol="onKey"/>
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="20" pc="268440765" symbol="onKey"/>
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="22" pc="268440792" symbol="onKey"/>
 <entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="23" pc="268440864" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="32" pc="268440882" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="33" pc="268440886" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="36" pc="268440909" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="39" pc="268440913" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="40" pc="268440940" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="41" pc="268440959" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="42" pc="268440976" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="43" pc="268440995" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="45" pc="268441011" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="49" pc="268441028" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="50" pc="268441055" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="51" pc="268441074" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="52" pc="268441091" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="53" pc="268441110" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="55" pc="268441126" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="61" pc="268441143" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="62" pc="268441157" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="65" pc="268441160" symbol="onKey"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="5" pc="268441164" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="6" pc="268441168" symbol="initialize"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="10" pc="268441187" symbol="onStart"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="14" pc="268441192" symbol="onStop"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="18" pc="268441197" symbol="getInitialView"/>
-<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="19" pc="268441201" symbol="getInitialView"/>
-<entry filename="Rez" lineNum="21" pc="268441269" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="25" pc="268441281" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="26" pc="268441412" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="27" pc="268441464" symbol="MainLayout"/>
-<entry filename="Rez" lineNum="30" pc="268441516" symbol="MainLayout"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="29" pc="268440882" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="30" pc="268440886" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="33" pc="268440909" symbol="onBack"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="35" pc="268440913" symbol="onBack"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="36" pc="268440927" symbol="onBack"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="39" pc="268440931" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="41" pc="268440935" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="42" pc="268440954" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="43" pc="268440971" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="44" pc="268440990" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="46" pc="268441006" symbol="onNextPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="50" pc="268441021" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="52" pc="268441025" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="53" pc="268441044" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="54" pc="268441061" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="55" pc="268441080" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\KeyboardDelegate.mc" lineNum="57" pc="268441096" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="5" pc="268441111" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="6" pc="268441115" symbol="initialize"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="10" pc="268441134" symbol="onStart"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="14" pc="268441139" symbol="onStop"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="18" pc="268441144" symbol="getInitialView"/>
+<entry filename="C:\\Users\\Mehran Toreihi\\eclipse-workspace\\Persian_Calendar\\.\\source\\Persian_CalendarApp.mc" lineNum="19" pc="268441148" symbol="getInitialView"/>
+<entry filename="Rez" lineNum="21" pc="268441216" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="25" pc="268441228" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="26" pc="268441359" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="27" pc="268441411" symbol="MainLayout"/>
+<entry filename="Rez" lineNum="30" pc="268441463" symbol="MainLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="35" symbol="DeviceModel"/>
@@ -314,9 +313,11 @@
 <entry field="true" id="37" symbol="AppName"/>
 <entry id="14" object="true" symbol="Persian_CalendarView"/>
 <entry id="17" method="true" symbol="get_month_days"/>
+<entry id="8389078" method="true" symbol="onNextPage"/>
 <entry id="18" method="true" symbol="get_month_string"/>
 <entry id="8388641" module="true" symbol="Math"/>
 <entry field="true" id="33" symbol="LauncherIcon"/>
+<entry id="8389081" method="true" symbol="onBack"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
@@ -336,6 +337,7 @@
 <entry field="true" id="10" symbol="current_year_view"/>
 <entry field="true" id="8388938" symbol="month"/>
 <entry id="31" module="true" symbol="Layouts"/>
+<entry id="8389079" method="true" symbol="onPreviousPage"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry id="8389345" symbol="rezId"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
@@ -415,11 +417,10 @@
 <entry endPc="268440734" name="j_y" stackId="1" startPc="268439775"/>
 <entry endPc="268440734" name="j_m" stackId="2" startPc="268439775"/>
 <entry endPc="268440882" name="key" stackId="1" startPc="268440761"/>
-<entry endPc="268441164" name="key" stackId="1" startPc="268440909"/>
-<entry endPc="268441192" name="state" stackId="1" startPc="268441187"/>
-<entry endPc="268441197" name="state" stackId="1" startPc="268441192"/>
-<entry endPc="268441533" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268441281"/>
-<entry endPc="268441534" name="dc" stackId="1" startPc="268441269"/>
+<entry endPc="268441139" name="state" stackId="1" startPc="268441134"/>
+<entry endPc="268441144" name="state" stackId="1" startPc="268441139"/>
+<entry endPc="268441480" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268441228"/>
+<entry endPc="268441481" name="dc" stackId="1" startPc="268441216"/>
 </localVars>
 <annotations/>
 <functions>
@@ -495,8 +496,13 @@
 <functionEntry accessMode="public" name="initialize" parent="KeyboardListener">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" name="onKey" parent="KeyboardListener">
-<param id="key"/>
+<functionEntry accessMode="public" name="onBack" parent="KeyboardListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onNextPage" parent="KeyboardListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onPreviousPage" parent="KeyboardListener">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="Persian_CalendarApp">
