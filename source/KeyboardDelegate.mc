@@ -18,45 +18,80 @@ class KeyboardDelegate extends Ui.InputDelegate {
     function onKey(key) {
 		//System.println("KEY_ENTER pressed");
         if (key.getKey() == Ui.KEY_ENTER) {
-        	//System.println("KEY_ENTER pressed");
-            Ui.pushView(new Persian_CalendarView(), new KeyboardListener(), Ui.KEY_LAP);
+        	System.println("KEY_ENTER pressed");
+            Ui.pushView(new Persian_CalendarView(), new myBehaviorDelegate(), Ui.KEY_LAP);
             updateTable(false);
         }
     }
 }
 
-class KeyboardListener extends Ui.BehaviorDelegate {
+class myBehaviorDelegate extends Ui.BehaviorDelegate {
     function initialize() {
-       Ui.InputDelegate.initialize();
+       Ui.BehaviorDelegate.initialize();
     }
     
+
+	function onKey(key) {
+    	System.println(key.getKey());
+    	System.println("inside onKey...");
+		    if (key.getKey() == Ui.KEY_DOWN) {
+				current_month_view += 1;
+				if (current_month_view > 12) {
+					current_year_view += 1;
+					current_month_view = 1;
+				} 
+				updateTable(false);
+				//System.println("Month: "+ current_month_view);
+				//System.println("Year : "+ current_year_view);
+		    }
+		    else if (key.getKey() == Ui.KEY_UP) {
+				current_month_view -= 1; 
+				if (current_month_view < 1) {
+					current_year_view -= 1;
+					current_month_view = 12;
+				} 
+				updateTable(false);
+				//System.println("Month: "+ current_month_view);
+				//System.println("Year : "+ current_year_view);
+		    }   
+		    else {
+		    	System.println("ELSE");
+		    	updateTable(true);
+		    	return false;
+		    }
+	    return true;
+	}
+
 	function onBack() {
-		//System.println("back...");
-		updateTable(true);
-		return false;
+		System.println("back...");
+			updateTable(true);
+			return false;
 	}
 
 	function onNextPage() {
-		//System.println("next page...");
-		current_month_view += 1;
-		if (current_month_view > 12) {
-			current_year_view += 1;
-			current_month_view = 1;
-		} 
-		updateTable(false);
-		//System.println("Month: "+ current_month_view);
-		//System.println("Year : "+ current_year_view);
+		System.println("next page...");
+			current_month_view += 1;
+			if (current_month_view > 12) {
+				current_year_view += 1;
+				current_month_view = 1;
+			} 
+			updateTable(false);
+			return false;
+			//System.println("Month: "+ current_month_view);
+			//System.println("Year : "+ current_year_view);
+		
 	}
 	function onPreviousPage() {
-		//System.println("previous page...");
-		current_month_view -= 1; 
-		if (current_month_view < 1) {
-			current_year_view -= 1;
-			current_month_view = 12;
-		} 
-		updateTable(false);
-		//System.println("Month: "+ current_month_view);
-		//System.println("Year : "+ current_year_view);	
-	}
+			System.println("previous page...");
+			current_month_view -= 1; 
+			if (current_month_view < 1) {
+				current_year_view -= 1;
+				current_month_view = 12;
+			} 
+			updateTable(false);
+			return false;
+			//System.println("Month: "+ current_month_view);
+			//System.println("Year : "+ current_year_view);	
+	}	
 
 }
