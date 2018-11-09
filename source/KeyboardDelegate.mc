@@ -6,11 +6,12 @@
 
 using Toybox.WatchUi as Ui;
 
-   
+  
 class KeyboardDelegate extends Ui.InputDelegate {
 
     function initialize() {
         Ui.InputDelegate.initialize();
+        device = Ui.loadResource(Rez.Strings.DeviceModel);	// get the device model from resource file
     }
 
     // Push a text picker if the up button is pressed
@@ -18,7 +19,7 @@ class KeyboardDelegate extends Ui.InputDelegate {
     function onKey(key) {
 		//System.println("KEY_ENTER pressed");
         if (key.getKey() == Ui.KEY_ENTER) {
-        	System.println("KEY_ENTER pressed");
+        	//System.println("KEY_ENTER pressed");
             Ui.pushView(new Persian_CalendarView(), new myBehaviorDelegate(), Ui.KEY_LAP);
             updateTable(false);
         }
@@ -63,13 +64,16 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 	}
 
 	function onBack() {
-		System.println("back...");
+		//System.println("back...");
 			updateTable(true);
 			return false;
 	}
 
 	function onNextPage() {
-		System.println("next page...");
+		//System.println("next page...");
+		if ("fenix5".equals(device)) {
+			return false;
+		}
 			current_month_view += 1;
 			if (current_month_view > 12) {
 				current_year_view += 1;
@@ -82,7 +86,11 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 		
 	}
 	function onPreviousPage() {
-			System.println("previous page...");
+			//System.println("previous page...");
+			System.println(device);
+			if ("fenix5".equals(device)) {
+				return false;
+			}			
 			current_month_view -= 1; 
 			if (current_month_view < 1) {
 				current_year_view -= 1;
