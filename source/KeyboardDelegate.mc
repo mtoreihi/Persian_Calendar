@@ -33,8 +33,8 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
     
 
 	function onKey(key) {
-    	System.println(key.getKey());
-    	System.println("inside onKey...");
+    	//System.println(key.getKey());
+    	//System.println("inside onKey...");
 		    if (key.getKey() == Ui.KEY_DOWN) {
 				current_month_view += 1;
 				if (current_month_view > 12) {
@@ -56,7 +56,7 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 				//System.println("Year : "+ current_year_view);
 		    }   
 		    else {
-		    	System.println("ELSE");
+		    	//System.println("ELSE");
 		    	updateTable(true);
 		    	return false;
 		    }
@@ -87,7 +87,7 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 	}
 	function onPreviousPage() {
 			//System.println("previous page...");
-			System.println(device);
+			//System.println(device);
 			if ("fenix5".equals(device)) {
 				return false;
 			}			
