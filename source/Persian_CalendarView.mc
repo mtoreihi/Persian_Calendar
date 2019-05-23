@@ -83,25 +83,30 @@ class Persian_CalendarView extends Ui.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	//drawMonthTable(dc, current_month_view, current_year_view);
+    	
     }
 
     // Update the view
     function onUpdate(dc) {
     	var current_view_text;
+    	var result = [];
+    	var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+    	result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
     	if (show_today) {
-	    	var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+	    	//var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
 			font = Gfx.FONT_XTINY;
 	   	
 	    	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
 	        dc.clear();
 	        dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
 	        
-	        var result = [];
-	        result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
+	        
+	        //result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
 	        //System.println(result[0]);
 	    	var jalali = result[0] + "/" + result[1] + "/" + result[2];
 	    	dc.drawText( centerX, centerY - (1 * lineSpacing), font, jalali, Gfx.TEXT_JUSTIFY_LEFT );
+	    	
+
     	}
     	else {
     		dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
@@ -110,11 +115,13 @@ class Persian_CalendarView extends Ui.View {
     		current_view_text = get_month_string(current_month_view) + "-" + current_year_view;
     		dc.drawText( centerX + 10, centerY - (1 * lineSpacing), font, current_view_text, Gfx.TEXT_JUSTIFY_LEFT );
     		dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
+    		
+    		// Draw the Month Table
+    		//drawMonthTable(dc, current_month_view, current_year_view, 0, 0);
     	}
     	
-    	// Draw the Month Table
-    	drawMonthTable(dc, current_month_view, current_year_view);
-    	
+	    	// Draw the Month Table
+    		drawMonthTable(dc, current_month_view, current_year_view, result[1], result[2]);
     	
         // Call the parent onUpdate function to redraw the layout
         //View.onUpdate(dc);
@@ -122,7 +129,7 @@ class Persian_CalendarView extends Ui.View {
 
 
 
-	public function drawMonthTable(dc, month, year) {
+	public function drawMonthTable(dc, month, year, current_month, current_day) {
 		
 		
     	var my_x = 45;	
@@ -182,6 +189,9 @@ class Persian_CalendarView extends Ui.View {
     		for (i=0; i<7; i++) {
     			if (i == 6) {
     				dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
+    			}
+    			if ((month == current_month) and (iterator == current_day) and (current_month != 0)) {
+    				dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
     			}
     			if (iterator == 1) {
     				if (week_day == i) {
