@@ -191,7 +191,7 @@ class Persian_CalendarView extends Ui.View {
     				dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT );
     			}
     			if ((month == current_month) and (iterator == current_day) and (current_month != 0)) {
-    				dc.setColor( Gfx.COLOR_YELLOW, Gfx.COLOR_TRANSPARENT );
+    				dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
     			}
     			if (iterator == 1) {
     				if (week_day == i) {
