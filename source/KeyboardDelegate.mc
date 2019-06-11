@@ -71,7 +71,7 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 
 	function onNextPage() {
 		//System.println("next page...");
-		if ("fenix5".equals(device)) {
+		if ("fenix5".equals(device) or "fenix5x".equals(device)) {
 			return false;
 		}
 			current_month_view += 1;
@@ -88,7 +88,7 @@ class myBehaviorDelegate extends Ui.BehaviorDelegate {
 	function onPreviousPage() {
 			//System.println("previous page...");
 			//System.println(device);
-			if ("fenix5".equals(device)) {
+			if ("fenix5".equals(device) or "fenix5x".equals(device)) {
 				return false;
 			}			
 			current_month_view -= 1; 
