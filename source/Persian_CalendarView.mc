@@ -97,7 +97,6 @@ class Persian_CalendarView extends Ui.View {
 	    	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
 	        dc.clear();
 	        dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
-	        
 	        //result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
 	        //System.println(result[0]);
 	    	var jalali = result[0] + "/" + result[1] + "/" + result[2];
