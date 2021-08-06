@@ -59,7 +59,6 @@ class Persian_CalendarView extends Ui.View {
 
 
     function initialize() {
-    	device = Ui.loadResource(Rez.Strings.DeviceModel);	// get the device model from resource file
     	
         View.initialize();
         
@@ -74,7 +73,7 @@ class Persian_CalendarView extends Ui.View {
     function onLayout(dc) {
     	centerY = (dc.getHeight() / 2) - (lineSpacing / 2);
     	centerY -= 70;
-    	centerX = 65;
+    	centerX = dc.getWidth() / 2 - 2 * Gfx.getFontHeight(font);
     	//languageLabel = Ui.loadResource( Rez.Strings.language_label );
         setLayout(Rez.Layouts.MainLayout(dc));
     }
@@ -93,13 +92,11 @@ class Persian_CalendarView extends Ui.View {
     	var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
     	result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
     	if (show_today) {
-	    	//var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
 			font = Gfx.FONT_XTINY;
 	   	
 	    	dc.setColor( Gfx.COLOR_BLACK, Gfx.COLOR_BLACK );
 	        dc.clear();
 	        dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
-	        
 	        
 	        //result = gregorian_to_jalali(today.year,get_month_number(today.month),today.day,false);
 	        //System.println(result[0]);
@@ -132,31 +129,17 @@ class Persian_CalendarView extends Ui.View {
 	public function drawMonthTable(dc, month, year, current_month, current_day) {
 		
 		
-    	var my_x = 45;	
+    	var my_x;	
     	var my_y = 20;
 		var i = 0; 
 		
 		font = Gfx.FONT_XTINY;
-		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
-    		X_Spacing = 20; //fenix 3
-    	}	   
-    	else {
-    		X_Spacing = 30;  //others
-    	}
-    	//System.println(device);
-    	//System.println(X_Spacing);
-    	
 
-    	//System.println(Rez.Strings.x_spacing)
+    	X_Spacing = Math.round(dc.getWidth() / 9.0) + 1;
     	var Y_Spacing = 20;
     	
     	// Draw the calendar header table 
-		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
-    		my_x = 45; //fenix 3
-    	}	   
-    	else {
-    		my_x = centerX - 45;  //others
-    	}    	
+    	my_x = Math.round(dc.getWidth() / 9.0);	
     	my_y = my_y + Y_Spacing;
     	var week = ['S','S','M','T','W','T','F'];
     	for (i=0; i<7; i++) {
@@ -170,12 +153,7 @@ class Persian_CalendarView extends Ui.View {
     	
     	// Draw the calendar month table
     	my_y = my_y + Y_Spacing;
-		if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
-    		my_x = 45; //fenix 3
-    	}	   
-    	else {
-    		my_x = centerX - 45;  //others
-    	}    	
+		my_x = Math.round(dc.getWidth() / 9.0);
     	var iterator = 1;
     	//today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     	var week_day = get_week_day(month, year);
@@ -193,33 +171,19 @@ class Persian_CalendarView extends Ui.View {
     			if ((month == current_month) and (iterator == current_day) and (current_month != 0)) {
     				dc.setColor( Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT );
     			}
-    			if (iterator == 1) {
-    				if (week_day == i) {
-    					dc.drawText(my_x , centerY - (1 * lineSpacing) + my_y, font, iterator, Gfx.TEXT_JUSTIFY_LEFT );
-    					my_x += X_Spacing;
-    					iterator += 1;
-    					if (iterator > month_days) { break; }
-    				}
-    				else {
-    					my_x += X_Spacing;
-    				}
-    			}
-    			else {
-    				dc.drawText(my_x , centerY - (1 * lineSpacing) + my_y, font, iterator, Gfx.TEXT_JUSTIFY_LEFT );	
-    				my_x += X_Spacing;
+
+    			if (iterator != 1 || week_day == i){
+    				dc.drawText(my_x , centerY - (1 * lineSpacing) + my_y, font, iterator, Gfx.TEXT_JUSTIFY_LEFT );
     				iterator += 1;
-    				if (iterator > month_days) { break; }
+					if (iterator > month_days) { break; }
     			}
+			    my_x += X_Spacing;
+  
     			dc.setColor( Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT );
     			//System.println(iterator);
     		}
     		my_y = my_y + Y_Spacing;
-			if ("fenix3".equals(device) || "fenix3_hr".equals(device)) {
-	    		my_x = 45; //fenix 3
-	    	}	   
-	    	else {
-	    		my_x = centerX - 45;  //others
-	    	} 	
+			my_x = Math.round(dc.getWidth() / 9.0);
     	}	
 	}
     // Called when this View is removed from the screen. Save the
