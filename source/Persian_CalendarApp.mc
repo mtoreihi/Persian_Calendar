@@ -18,5 +18,8 @@ class Persian_CalendarApp extends App.AppBase {
     function getInitialView() {
         return [ new Persian_CalendarView(), new KeyboardDelegate() ];
     }
+    function getGlanceView() {
+    	return [new Persian_CalendarGlanceView()];
+    }
 
 }
